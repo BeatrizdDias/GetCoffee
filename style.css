@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 2px #24242426;
+  height: 13vh;
+}
+
+header div {
+  display: flex;
+}
+
+header h2 {
+  margin-left: 10px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  width: 30vw;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    height: 18vh;
+  }
+  header ul {
+    width: 80vw;
+  }
+}
+
+main {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sectionText p {
+  font-size: 36px;
+  font-weight: 700;
+  width: 44vw;
+  height: 35vh;
+}
+
+.sectionText {
+  height: 50vh;
+}
+
+.sectionText button {
+  color: white;
+  background-color: #fca60f;
+  font-size: 24px;
+  height: 10vh;
+  width: 20vw;
+  border: none;
+  border-radius: 5px;
+}
+
+.sectionText nav {
+  height: 15vh;
+  width: 13vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+  }
+
+  .sectionText p {
+    height: 20vh;
+    width: 80vw;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .sectionText button {
+    width: 80vw;
+  }
+
+  .sectionText nav {
+    width: 80vw;
+    height: 60vh;
+  }
+
+  .sectionText img {
+    width: 10vw;
+  }
+
+  .sectionFig {
+    display: none;
+  }
+}
